@@ -1,0 +1,36 @@
+#root {
+	display: flex;
+	justify-content: center;
+	min-width: 600px;
+	width: 100%;
+
+	.global-app-container {
+		width: 100%;
+
+		.spacer-16 {
+			margin: 16px;
+		}
+
+		.content-centerer {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+
+			.content-container {
+				display: flex;
+				flex-direction: column;
+				min-width: 600px;
+				max-width: 600px;
+				
+				.content-item {
+					display: flex;
+					justify-content: center;
+					min-width: 400px;
+					max-width: 600px;
+					margin: 12px;
+				}
+			}
+		}
+	}
+}
+

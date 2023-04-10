@@ -1,0 +1,30 @@
+
+
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+
+  .forecast-item {
+    padding: 24px;
+
+    .forecast-item-weekday-container {
+      margin-bottom: 6px;
+
+      .forecast-item-weekday {
+        font-variant: small-caps;
+      }
+    }
+
+    .weather-condition-container {
+      margin-bottom: 6px;
+    }
+
+    .low-temp-text {
+      color: rgb(145, 145, 231);
+    }
+
+    .high-temp-text {
+      color: rgb(216, 113, 113);
+    }
+  }
+}

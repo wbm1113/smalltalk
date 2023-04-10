@@ -1,0 +1,38 @@
+
+=== PHASE 1
+
+[x] stand up react app
+
+[x] set up an API with Amazon API Gateway
+
+[x] call amazon API gateway from react app
+
+[x] set up amazon lamda function to call the api and return results
+
+[x] configure the API to use the amazon lamda function
+
+[x] set up news api
+
+[x] configure lamda function to pull from news api
+
+=== PHASE 2
+
+[ ] build frontend button to pull smalltalks
+
+[ ] integrate weather (https://open-meteo.com/)
+
+[ ] clean up frontend/use dark style
+
+=== PHASE 3
+
+[ ] figure out how to deal with free news api limit of 3 articles/pull
+    - can i use query params to get appropriate articles?
+    - may need a different api
+
+[ ] deploy
+
+[ ] fix everything that breaks
+
+[ ] look into disabling CORS somehow
+
+[ ] re-deploy

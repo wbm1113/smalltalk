@@ -1,0 +1,33 @@
+
+.weather-root {
+  width: 100%;
+  
+  .weather-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  
+  .weather-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  
+    .today-weather {
+      padding: 24px;
+  
+      .today-text-container {
+        margin-bottom: 6px;
+  
+        .today-text {
+          font-variant: small-caps;
+        }
+      }
+  
+      .today-condition-container {
+        margin-bottom: 6px;
+      }
+    }
+  }
+}
+

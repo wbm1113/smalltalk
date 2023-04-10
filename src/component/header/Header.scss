@@ -1,0 +1,25 @@
+
+
+.header-banner {
+  padding: 12px;
+  background-color: rgb(36, 86, 66);
+  display: flex;
+  justify-content: center;
+
+  .banner-centerer {
+    min-width: 600px;
+    max-width: 600px;
+
+    .banner-text {
+      margin-left: 12px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    
+    .description-text {
+      margin-left: 16px;
+      font-style: italic;
+      color: #b0b7b2;
+    }
+  }
+}
