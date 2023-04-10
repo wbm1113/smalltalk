@@ -9,6 +9,8 @@
   .banner-centerer {
     min-width: 600px;
     max-width: 600px;
+    display: flex;
+    justify-content: space-between;
 
     .banner-text {
       margin-left: 12px;

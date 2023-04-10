@@ -4,6 +4,7 @@ import { Weather } from './component/weather/Weather';
 import { Header } from './component/header/Header';
 import { Facts } from './component/facts/Facts';
 import { MoreFromYourLocation } from './component/more-from-your-location/MoreFromYourLocation';
+import { Footer } from './component/footer/Footer';
 import './App.scss';
 
 function App() {
@@ -32,9 +33,13 @@ function App() {
           <div className="content-item">
             <MoreFromYourLocation/>
           </div>
-
-          <div className="spacer-16"></div>
         </div>
+      </div>
+
+      <div className="spacer-32"></div>
+
+      <div>
+        <Footer/>
       </div>
     </div>
   );
