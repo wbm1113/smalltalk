@@ -2,7 +2,6 @@
   "name": "smalltalk",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://actn5ghkz3.execute-api.us-east-2.amazonaws.com/prod",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
     "@testing-library/jest-dom": "^5.16.5",
