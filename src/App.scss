@@ -1,5 +1,5 @@
 #root {
-	min-width: 600px;
+	min-width: 300px;
 	width: 100%;
 
 	.global-app-container {
@@ -23,14 +23,12 @@
 			.content-container {
 				display: flex;
 				flex-direction: column;
-				min-width: 600px;
+				min-width: 300px;
 				max-width: 600px;
 				
 				.content-item {
 					display: flex;
 					justify-content: center;
-					min-width: 400px;
-					max-width: 600px;
 					margin: 12px;
 				}
 			}

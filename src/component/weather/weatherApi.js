@@ -21,7 +21,7 @@ const positionOptions = {
 };
 
 export function queryWeatherData() {
-  return new Promise((resolve) => {
+  return new Promise((resolve, rej) => {
     let cachedWeather = sessionStorage.getItem("weather");
 
     if (cachedWeather) {
@@ -68,7 +68,9 @@ export function queryWeatherData() {
           })
       },
       error => {
-        
+        console.log("error retrieving weather");
+        console.log(error);
+        rej(error);
       },
       positionOptions
     )
