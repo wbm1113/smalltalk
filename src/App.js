@@ -16,7 +16,7 @@ function App() {
 
       <div className="content-centerer">
         <div className="content-container">
-          <div className="content-item">
+          <div className="content-item weather-container-special">
             <Weather/>
           </div>
 

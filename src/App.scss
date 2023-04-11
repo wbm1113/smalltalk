@@ -25,6 +25,10 @@
 				flex-direction: column;
 				min-width: 300px;
 				max-width: 600px;
+
+				.weather-container-special {
+					overflow-x: auto;
+				}
 				
 				.content-item {
 					display: flex;
