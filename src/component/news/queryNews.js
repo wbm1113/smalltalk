@@ -11,7 +11,7 @@ export function queryNews() {
 			return;
 		}
 
-		fetch('/news')
+		fetch('https://actn5ghkz3.execute-api.us-east-2.amazonaws.com/prod/news')
 			.then(response => response.json())
 			.then(response => {
 				sessionStorage.setItem("news", response);
