@@ -3,7 +3,7 @@
 
 
 export function queryNews() {
-	return new Promise((resolve) => {
+	return new Promise((resolve, reject) => {
 		let cachedNews = sessionStorage.getItem("news");
 
 		if (cachedNews) {
@@ -16,6 +16,9 @@ export function queryNews() {
 			.then(response => {
 				sessionStorage.setItem("news", response);
 				resolve(JSON.parse(response));
+			})
+			.catch(error => {
+				reject(error);
 			})
 	})
 }

@@ -10,9 +10,7 @@ import './App.scss';
 function App() {
   return (
     <div className="global-app-container">
-      <div>
-        <Header/>
-      </div>
+      <Header/>
 
       <div className="spacer-16"></div>
 
@@ -38,9 +36,7 @@ function App() {
 
       <div className="spacer-32"></div>
 
-      <div>
-        <Footer/>
-      </div>
+      <Footer/>
     </div>
   );
 }

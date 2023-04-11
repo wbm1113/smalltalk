@@ -1,11 +1,17 @@
 
 .footer-root {
+  margin-top: auto;
   padding: 12px;
   background-color: rgb(36, 86, 66);
   display: flex;
-  justify-content: center;
 
-  .link-color {
-    color: rgb(206, 211, 206);
+  .footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .link-color {
+      color: rgb(206, 211, 206);
+    }
   }
 }
