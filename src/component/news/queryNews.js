@@ -14,8 +14,8 @@ export function queryNews() {
 		fetch('https://actn5ghkz3.execute-api.us-east-2.amazonaws.com/prod/news')
 			.then(response => response.json())
 			.then(response => {
-				sessionStorage.setItem("news", response);
-				resolve(JSON.parse(response));
+				sessionStorage.setItem("news", response.body);
+				resolve(JSON.parse(response.body));
 			})
 			.catch(error => {
 				reject(error);
