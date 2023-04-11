@@ -16,7 +16,7 @@ export function NewsItem(props) {
 				<a href={article.url} target="_blank" className="article-link-text">{article.title}</a>
 			</div>
 
-			<div class="spacer-8"></div>
+			<div className="spacer-8"></div>
 			
 			<div>
 				{article.snippet}

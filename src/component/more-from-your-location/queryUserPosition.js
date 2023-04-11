@@ -25,7 +25,7 @@ export function queryUserPosition() {
         // resolve(resolution)
 
         fetch(
-          '/reversegeolocation',
+          'https://actn5ghkz3.execute-api.us-east-2.amazonaws.com/prod/reversegeolocation',
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -37,7 +37,7 @@ export function queryUserPosition() {
         )
         .then(response => response.json())
         .then(response => {
-          response = JSON.parse(response);
+          response = JSON.parse(response.body.response);
           let data = response.features[0].properties;
 
           let resolution = {
