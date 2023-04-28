@@ -4,17 +4,32 @@ import { selectNews, queryNewsAsync } from './NewsSlice';
 import { NewsItem } from './NewsItem';
 import './NewsContainer.scss'
 
+let loaded = false;
+
 export function NewsContainer() {
 	const dispatch = useDispatch();
 	const news = useSelector(selectNews);
-
 	useEffect(() => {
 		const loadData = async () => {
 			dispatch(queryNewsAsync());
 		}
-
+ 
 		loadData();
+		loaded = true;
 	}, [])
+
+	if (! loaded) {
+		return (
+			<div className="news-root">
+				<div className="news-title">
+					News
+				</div>
+				<div>
+					<i>loading news...</i>
+				</div>
+			</div>
+		)
+	}
 
 	let rows = [];
 

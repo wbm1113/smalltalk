@@ -19,7 +19,7 @@ export function ForecastContainer(props) {
 
   for (let i = 0; i < 3; i++) {
     let dayNumber = today + i + 1;
-    if (dayNumber > 7) {
+    if (dayNumber >= 7) {
       dayNumber -= 7;
     }
     dayNumbers[i] = dayNumber;
